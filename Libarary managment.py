@@ -36,8 +36,7 @@ class User:
         self.borrowed_books=[]
         self.fine=0
 
-    def __str__(self):
-        return f"Name :{self.name},ID{self.user_id}"
+    
 
     def borrow_book(self,book):
         if len(self.borrowed_books)>=User.max_borrow_limit:
